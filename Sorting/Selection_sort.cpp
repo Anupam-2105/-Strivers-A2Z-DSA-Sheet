@@ -25,7 +25,7 @@ void selectionSort(int arr[], int n)
 
 int main()
 {
-    int arr[]={5, 1, 6, 2, 3, 7};
+    int arr[]{5, 1, 6, 2, 3, 7};
     int n = sizeof(arr) / sizeof(arr[0]);
     selectionSort(arr, n);
     for (auto it : arr)
