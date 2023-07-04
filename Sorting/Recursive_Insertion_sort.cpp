@@ -6,20 +6,21 @@ using namespace std;
 
 void insertionSort(int arr[], int n)
 {
-    if (n <= 1)
+    if (n <= 1){
         return;
+    }
 
-    insertionSort( arr, n-1 );
+    insertionSort(arr, n - 1);
 
-    int l = arr[n-1];
-    int j = n-2;
+    int l = arr[n - 1];
+    int j = n - 2;
 
     while (j >= 0 && arr[j] > l)
     {
-        arr[j+1] = arr[j];
+        arr[j + 1] = arr[j];
         j--;
     }
-    arr[j+1] = l;
+    arr[j + 1] = l;
 }
 
 int main()
